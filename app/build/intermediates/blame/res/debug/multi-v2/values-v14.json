@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\syyam\\Downloads\\App Build\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v14\\values-v14.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\syyam\\.gradle\\caches\\transforms-1\\files-1.1\\BottomDialogs-1.2.1.aar\\ed1e51fef9abdc27eee3c3dc9eb6e70e\\res\\values-v14\\values-v14.xml",
+                    "from": {
+                        "startLines": "2,5",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,168",
+                        "endLines": "4,7",
+                        "endColumns": "12,12",
+                        "endOffsets": "163,286"
+                    }
+                }
+            ]
+        }
+    ]
+}

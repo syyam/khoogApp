@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".createevent.step4">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp">
+        <ImageView
+            android:id="@+id/backarrowstep4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+
+
+        <TextView
+            android:id="@+id/creatEvn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/font"
+            android:layout_gravity="center"
+            android:paddingRight="40dp"
+            android:paddingLeft="40dp"
+            android:text="Discount"
+            android:textColor="@color/khoogColor"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eee"
+        android:layout_below="@id/layout1"
+        android:id="@+id/view"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:paddingBottom="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/layout">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:id="@+id/inner_layout">
+
+                <CheckBox
+                    android:layout_marginLeft="-5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/groupCheckBox"
+                    android:text="Groups"
+                    android:fontFamily="@font/font"
+                    android:textSize="15sp"
+                    android:textColor="#222"
+                    android:textStyle="bold"
+                    android:buttonTint="@color/khoogColor"/>
+
+                <LinearLayout
+                    android:id="@+id/groupLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/spinner_background"
+                    android:layout_marginTop="10dp">
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/groupSpin">
+                    </Spinner>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="On every"
+                    android:fontFamily="@font/font"
+                    android:textSize="15sp"
+                    android:textColor="#222"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/margin_10"/>
+
+                <LinearLayout
+                    android:id="@+id/everyLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/spinner_background"
+                    android:layout_marginTop="10dp">
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/onEverySpin">
+                    </Spinner>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:id="@+id/inner_layout1">
+
+                <CheckBox
+                    android:id="@+id/discountKid_box"
+                    android:layout_marginLeft="-5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Discount for kid"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/font"
+                    android:textColor="#222"
+                    android:textStyle="bold"
+                    android:buttonTint="@color/khoogColor" />
+                <LinearLayout
+                    android:id="@+id/discountLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/spinner_background"
+                    android:layout_marginTop="10dp">
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/discountKidSpin">
+                    </Spinner>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="On age below"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/font"
+                    android:textColor="#222"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/margin_10"/>
+
+                <LinearLayout
+                    android:id="@+id/onAgeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/spinner_background"
+                    android:layout_marginTop="10dp">
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/onAgeSpin">
+                    </Spinner>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:id="@+id/inner_layout2">
+
+                <CheckBox
+                    android:id="@+id/single_box"
+                    android:layout_marginLeft="-5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Single"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/font"
+                    android:textColor="#222"
+                    android:textStyle="bold"
+                    android:buttonTint="@color/khoogColor" />
+
+                <LinearLayout
+                    android:id="@+id/singleLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/spinner_background"
+                    android:layout_marginTop="10dp">
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/singleSpin">
+                    </Spinner>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="For"
+                    android:textColor="#222"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/font"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+                <LinearLayout
+                    android:id="@+id/forLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/spinner_background"
+                    android:layout_marginTop="10dp">
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/forSpin">
+                    </Spinner>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:id="@+id/inner_layout3">
+
+                <CheckBox
+                    android:id="@+id/couple_box"
+                    android:layout_marginLeft="-5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font"
+                    android:text="Couples"
+                    android:textSize="15sp"
+                    android:textColor="#222"
+                    android:textStyle="bold"
+                    android:buttonTint="@color/khoogColor" />
+                <LinearLayout
+                    android:id="@+id/coupleLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/spinner_background"
+                    android:layout_marginTop="10dp">
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/coupleSpin">
+                    </Spinner>
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/student_box"
+                    android:layout_marginLeft="-5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Students"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/font"
+                    android:textColor="#222"
+                    android:textStyle="bold"
+                    android:buttonTint="@color/khoogColor"
+                    android:layout_marginTop="@dimen/margin_10"/>
+                <LinearLayout
+                    android:id="@+id/studentsLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/spinner_background"
+                    android:layout_marginTop="10dp">
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/studentSpin">
+                    </Spinner>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Refund"
+                    android:fontFamily="@font/font"
+                    android:textColor="#222"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/margin_10">
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:id="@+id/flexible_box"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Flexible"
+                        android:checked="true"
+                        android:fontFamily="@font/font"
+                        android:textColor="#222"
+                        android:textSize="15sp"
+                        android:buttonTint="@color/khoogColor" />
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:fontFamily="@font/font"
+                        android:id="@+id/moderate_box"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Moderate"
+                        android:textColor="#222"
+                        android:textSize="15sp"
+                        android:buttonTint="@color/khoogColor" />
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:id="@+id/strict_box"
+                        android:fontFamily="@font/font"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Strict"
+                        android:textColor="#222"
+                        android:textSize="15sp"
+                        android:buttonTint="@color/khoogColor" />
+
+                </RadioGroup>
+                <LinearLayout
+                    android:id="@+id/eligibleLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/spinner_background"
+                    android:layout_marginTop="10dp">
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/eligibleSpin">
+                    </Spinner>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="refund if cancellation request"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/font"
+                    android:layout_marginTop="10dp"/>
+
+                <LinearLayout
+                    android:id="@+id/cancelLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/spinner_background"
+                    android:layout_marginTop="10dp">
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/refundCancelSpin">
+                    </Spinner>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/note_background"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:id="@+id/note"
+                        android:fontFamily="@font/font"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Note:All cancellation before the set refund date would be eligible for a full 100% refund."
+                        android:textStyle="bold"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_below="@id/mainlayout"
+        android:id="@+id/btnlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/discountEventBtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F9AD19"
+            android:fontFamily="@font/font"
+            android:textSize="16sp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Save &amp; Next"
+            android:textColor="#FFF" tools:targetApi="o"/>
+
+    </LinearLayout>
+</RelativeLayout>

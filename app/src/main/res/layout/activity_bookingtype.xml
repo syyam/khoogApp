@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.android.khoog.addactivity">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp">
+        <ImageView
+            android:id="@+id/backarrow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+
+        <TextView
+            android:id="@+id/creatEvn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:paddingRight="40dp"
+            android:paddingLeft="40dp"
+            android:text="Booking Type"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eee"
+        android:layout_below="@id/layout1"
+        android:id="@+id/view"/>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:orientation="horizontal"
+    android:padding="30dp"
+    android:layout_below="@id/layout1"
+android:layout_height="wrap_content">
+
+
+<RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="-5dp"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/margin_10">
+    <RadioButton
+        android:layout_weight="1"
+        android:id="@+id/rb_pre"
+        android:textSize="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pre Authorized"
+        android:checked="true"
+        android:fontFamily="@font/font"
+        android:textColor="#222"
+        android:buttonTint="@color/khoogColor" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/preText"
+        android:text="This holds travellers fund until you accept booking"/>
+
+    <RadioButton
+        android:layout_weight="1"
+        android:id="@+id/rb_auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Automatic Booking"
+        android:checked="true"
+        android:textSize="16dp"
+        android:fontFamily="@font/font"
+        android:textColor="#222"
+        android:buttonTint="@color/khoogColor" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/autoText"
+        android:text="All Booking will be confirmed and paid automatically"/>
+
+
+</RadioGroup>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/wpBtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/font"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Finish"
+            android:background="#F9AD19"
+            android:textColor="#FFF" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

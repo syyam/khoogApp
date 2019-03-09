@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".partner.finishRegistration">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center|center_vertical">
+
+        <ImageView
+            android:id="@+id/imgcheck"
+            android:layout_width="200dp"
+            android:layout_height="180dp"
+            android:src="@drawable/tick"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/tv1"
+            android:fontFamily="@font/font"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mubarak!"
+            android:layout_below="@+id/imgcheck"
+            android:textSize="50dp"
+            android:textColor="@color/khoogColor"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_below="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your account is created."
+            android:textAlignment="center"
+            android:textSize="32dp"
+            android:fontFamily="@font/font"
+            android:textColor="#AAA"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:padding="20dp"
+            android:fontFamily="@font/font"
+            android:layout_below="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="One of our support team member will shortly contact you."
+            android:textAlignment="center"
+            android:textSize="22dp"
+            android:textColor="#AAA"
+            android:textStyle="bold"/>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/btnlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/wpBtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/font"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Login To Your Account"
+            android:background="#F9AD19"
+            android:textColor="#FFF" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

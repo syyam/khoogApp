@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".partner.step3">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="100dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:id="@+id/layout">
+
+            <ImageView
+                android:id="@+id/backarrow"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/font"
+                android:text="Become a Partner"
+                android:textColor="#000"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:fontFamily="@font/font"
+                android:text="Please upload CNIC Frontside"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+            <Button
+                android:fontFamily="@font/font"
+                android:id="@+id/frontside"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#F9AD19"
+                android:text="CNIC Frontside"
+                android:textAllCaps="false"
+                android:textColor="#fff" />
+            <ImageView
+                android:id="@+id/frontimage"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center" />
+
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/btnlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/endBtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F9AD19"
+            android:fontFamily="@font/font"
+            android:textSize="16sp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Save &amp; Next"
+            android:textColor="#FFF" />
+
+    </LinearLayout>
+</RelativeLayout>

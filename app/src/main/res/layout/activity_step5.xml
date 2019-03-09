@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".partner.step4">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="100dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:id="@+id/layout">
+
+            <ImageView
+                android:id="@+id/backarrow"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/font"
+                android:text="Become a Partner"
+                android:textColor="#000"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:fontFamily="@font/font"
+                android:text="Please enter your following details"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/font"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add Facebook"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+                <EditText
+                    android:layout_weight="1"
+                    android:id="@+id/addfb"
+                    android:height="50dp"
+                    android:fontFamily="@font/font"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="facebook.com/iamkhoog"
+                    android:textCursorDrawable="@drawable/cursor" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/font"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add Instagram"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+                <EditText
+                    android:layout_weight="1"
+                    android:id="@+id/addinsta"
+                    android:fontFamily="@font/font"
+                    android:height="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="instagram.com/iamkhoog"
+                    android:textCursorDrawable="@drawable/cursor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_10">
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/font"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add Twitter"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+                <EditText
+                    android:layout_weight="1"
+                    android:id="@+id/addtwitter"
+                    android:fontFamily="@font/font"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="twitter.com/iamkhoog"
+                    android:textCursorDrawable="@drawable/cursor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_width="match_parent"
+                android:id="@+id/ntnlayout"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/font"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NTN #"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+                <EditText
+                    android:layout_weight="1"
+                    android:id="@+id/addntn"
+                    android:fontFamily="@font/font"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="062243"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:height="50dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/dtslayout"
+                android:layout_marginTop="@dimen/margin_10">
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/font"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DTS License #"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+                <EditText
+                    android:id="@+id/addlicence"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/font"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="20A622"
+                    android:textCursorDrawable="@drawable/cursor"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/btnlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/endBtnSocial"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F9AD19"
+            android:fontFamily="@font/font"
+            android:textSize="16sp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Save &amp; Next"
+            android:textColor="#FFF" />
+
+    </LinearLayout>
+</RelativeLayout>

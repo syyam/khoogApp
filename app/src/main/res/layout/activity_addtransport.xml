@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="18dp"
+    android:layout_height="match_parent"
+    tools:context="com.android.khoog.addactivity">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp">
+        <ImageView
+            android:id="@+id/backarrow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+
+        <TextView
+            android:id="@+id/creatEvn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:fontFamily="@font/font"
+            android:paddingRight="40dp"
+            android:paddingLeft="40dp"
+            android:text="Add Transport"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eee"
+        android:layout_below="@id/layout1"
+        android:id="@+id/view"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type"
+            android:fontFamily="@font/font"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+
+            android:layout_height="wrap_content">
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-5dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_10">
+                <RadioButton
+                    android:layout_weight="1"
+                    android:id="@+id/rb_arrival"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Arrival"
+                    android:checked="true"
+                    android:fontFamily="@font/font"
+                    android:textColor="#222"
+                    android:buttonTint="@color/khoogColor" />
+
+                <RadioButton
+                    android:layout_weight="1"
+                    android:id="@+id/rb_departure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Departure"
+                    android:checked="true"
+                    android:fontFamily="@font/font"
+                    android:textColor="#222"
+                    android:buttonTint="@color/khoogColor" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:textSize="15dp"
+                android:text="Where"/>
+            <EditText
+                android:id="@+id/where"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_edittext"
+                android:textSize="15dp"
+                android:fontFamily="@font/font"
+                android:singleLine="true"
+                android:textCursorDrawable="@drawable/cursor"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:textSize="15dp"
+                android:text="Time"/>
+            <EditText
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_edittext"
+                android:textSize="15dp"
+                android:fontFamily="@font/font"
+                android:singleLine="true"
+                android:textCursorDrawable="@drawable/cursor"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:textSize="15dp"
+                android:text="Notes"/>
+            <EditText
+                android:id="@+id/notes"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/rounded_edittext"
+                android:textSize="14sp"
+                android:inputType="textMultiLine"
+                android:lines="10"
+                android:fontFamily="@font/font"
+                android:singleLine="true"
+                android:textCursorDrawable="@drawable/cursor"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/mainlayout"
+        android:id="@+id/btnlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/adtransporsystem"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F9AD19"
+            android:textSize="16sp"
+            android:fontFamily="@font/font"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Add Transport Info"
+            android:textColor="#FFF" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

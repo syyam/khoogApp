@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".GetStarted">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="vertical"
+            android:id="@+id/mainlayout">
+
+            <ImageView
+                android:id="@+id/backarrow"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Get Started"
+                android:id="@+id/getStartedText"
+                android:textColor="#000"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/partner_fname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="First Name"
+                android:textCursorDrawable="@drawable/cursor"
+                android:singleLine="true"/>
+
+            <EditText
+                android:id="@+id/partner_lname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="Last Name"
+                android:textCursorDrawable="@drawable/cursor"
+                android:singleLine="true"/>
+
+            <EditText
+                android:id="@+id/partner_emailid"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="Email ID"
+                android:textCursorDrawable="@drawable/cursor"
+                android:singleLine="true"
+                android:inputType="textEmailAddress"/>
+
+            <EditText
+                android:id="@+id/partner_phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="12345678"
+                android:textCursorDrawable="@drawable/cursor"
+                android:singleLine="true"
+                android:inputType="number"
+                android:text="+92"/>
+
+            <EditText
+                android:id="@+id/partner_pass"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="Password"
+                android:textCursorDrawable="@drawable/cursor"
+                android:inputType="textPassword"
+                android:singleLine="true"/>
+
+            <LinearLayout
+                android:id="@+id/partner__layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/spinner_background">
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/citySpin">
+                </Spinner>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/view"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/aviGetStarted"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                android:layout_height="wrap_content"
+                style="@style/AVLoadingIndicatorView"
+                android:visibility="gone"
+                app:indicatorName="LineSpinFadeLoaderIndicator"
+                app:indicatorColor="@color/khoogColor"
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/btnlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:layout_marginTop="70dp"
+            android:gravity="bottom"
+            android:layout_gravity="bottom">
+
+            <Button
+                android:id="@+id/partner_Btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_btn"
+                android:text="Proceed"
+                android:textColor="#FFF" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="bottom|center_horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/alreadyAccount"
+                android:text="Already have an account? "
+                />
+            <TextView
+                android:id="@+id/partner_signin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign in"
+                android:textColor="#F9AD19"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

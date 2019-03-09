@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".RegisterUser">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="vertical"
+            android:id="@+id/mainlayout">
+
+            <ImageView
+                android:id="@+id/backarrow"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Create an account"
+                android:id="@+id/createAccountText"
+                android:textColor="#000"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/fullname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="Full Name"
+                android:textCursorDrawable="@drawable/cursor"
+                android:singleLine="true"/>
+            <EditText
+                android:id="@+id/emailid"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="Email ID"
+                android:textCursorDrawable="@drawable/cursor"
+                android:singleLine="true"
+                android:inputType="textEmailAddress"/>
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="12345678"
+                android:textCursorDrawable="@drawable/cursor"
+                android:singleLine="true"
+                android:inputType="number"
+                android:text="+92" />
+
+            <EditText
+                android:id="@+id/regpass"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="Password"
+                android:textCursorDrawable="@drawable/cursor"
+                android:inputType="textPassword"
+                android:singleLine="true"/>
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Gender"
+                    android:id="@+id/genderfont"
+                    android:textColor="#888"
+                    android:textSize="18sp"/>
+
+                <RadioGroup
+                    android:id="@+id/radio_grop"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/maleRadio"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:textColor="#222"
+                        android:buttonTint="@color/khoogColor"
+                        android:checked="true"/>
+                    <RadioButton
+                        android:id="@+id/femaleRadio"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female"
+                        android:textColor="#222"
+                        android:buttonTint="@color/khoogColor"/>
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/terms_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="I Accept Terms and Condition"
+                android:textColor="#222"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:buttonTint="@color/khoogColor"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:layout_marginTop="70dp"
+            android:gravity="bottom"
+            android:layout_gravity="bottom">
+
+            <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/avi"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+                android:foregroundGravity="center"
+            android:layout_height="wrap_content"
+            style="@style/AVLoadingIndicatorView"
+            android:visibility="gone"
+            app:indicatorName="LineSpinFadeLoaderIndicator"
+            app:indicatorColor="@color/khoogColor"
+            />
+
+            <Button
+                android:id="@+id/regBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="regFunc"
+                android:background="@drawable/rounded_btn"
+                android:text="Proceed"
+                android:textColor="#FFF" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="bottom|center_horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/alreadyaccount"
+                android:text="Already have an account? "
+                />
+            <TextView
+                android:id="@+id/signin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign in"
+                android:textColor="#F9AD19"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".partner.step2">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:paddingBottom="60dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:id="@+id/layout">
+
+            <ImageView
+                android:id="@+id/backarrow"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+
+
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Become a Partner"
+                android:fontFamily="@font/font"
+                android:textColor="#000"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:fontFamily="@font/font"
+                android:text="Personal Information"
+                android:textSize="15sp" />
+            <EditText
+                android:id="@+id/cName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_edittext"
+                android:textCursorDrawable="@drawable/cursor" />
+            <LinearLayout
+                android:id="@+id/cmpnyType_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical"
+                android:background="@drawable/spinner_background"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/companySpin">
+                </Spinner>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/position_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical"
+                android:background="@drawable/spinner_background"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/positionSpin">
+                </Spinner>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/abtCmpny"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="10dp"
+                android:gravity="top"
+                android:background="@drawable/rounded_edittext"
+                android:inputType="text|textMultiLine"
+                android:textCursorDrawable="@drawable/cursor" />
+
+            <EditText
+                android:id="@+id/offiAdd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:textCursorDrawable="@drawable/cursor" />
+
+            <LinearLayout
+                android:id="@+id/city_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical"
+                android:background="@drawable/spinner_background"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/citySpin">
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/province_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical"
+                android:background="@drawable/spinner_background"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/province">
+                </Spinner>
+            </LinearLayout>
+            <EditText
+                android:id="@+id/fetchphone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:text=""
+                android:singleLine="true"
+                android:inputType="number"
+                android:textCursorDrawable="@drawable/cursor" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_below="@id/mainlayout"
+        android:id="@+id/btnlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/pBtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F9AD19"
+            android:textSize="16sp"
+            android:fontFamily="@font/font"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Save &amp; Next"
+            android:textColor="#FFF" />
+
+    </LinearLayout>
+</RelativeLayout>

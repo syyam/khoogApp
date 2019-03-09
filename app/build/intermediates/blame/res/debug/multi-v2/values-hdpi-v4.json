@@ -1,0 +1,38 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\syyam\\Downloads\\App Build\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hdpi-v4\\values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\syyam\\.gradle\\caches\\transforms-1\\files-1.1\\awesome-calendar-1.1.3.aar\\3385877dc009427fcb73e68f5b9796f3\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,108,157,206,262,312,362,412,466,512,562,611,655,707",
+                        "endColumns": "52,48,48,55,49,49,49,53,45,49,48,43,51,47",
+                        "endOffsets": "103,152,201,257,307,357,407,461,507,557,606,650,702,750"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\syyam\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5fd2c1156a03b33a9154442df111f2ad\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    },
+                    "to": {
+                        "startLines": "16",
+                        "startColumns": "4",
+                        "startOffsets": "755",
+                        "endLines": "20",
+                        "endColumns": "13",
+                        "endOffsets": "1027"
+                    }
+                }
+            ]
+        }
+    ]
+}

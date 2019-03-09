@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".partner.pdf">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/testTv"
+                android:fontFamily="@font/font"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MEMORANDUM OF AGREEMENT"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/testTv1"
+                    android:fontFamily="@font/font"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="This Memorandum of Agreement is made and entered into on this 24 day of Oct 2018 (“Effective Date”) by and between:"
+                    android:textSize="14dp"
+                    android:textColor="#000"/>
+                <TextView
+                    android:id="@+id/testTv2"
+                    android:fontFamily="@font/font"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="KhooG, a traveling platform, with an office located at Office No.5, 2nd Floor, Adil Mukhtar Building, 9/29 Fane Road, Lahore;and jhon cina, a Travel Agent company, with an office located at"
+                    android:textColor="#000"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/testTv3"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/font"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PURPOSE &amp; SCOPE."
+                    android:textSize="16dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:id="@+id/testTv4"
+                    android:fontFamily="@font/font"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="The purpose of this Memorandum of Agreement is to set forth the terms and conditions, scope of work and responsibilities of the parties associated with their collaboration for working as service providers.\nSpecifically, both parties will cooperate to provide touring services to customers through their area of expertise"
+                    android:textSize="14dp"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/testTv5"
+                    android:fontFamily="@font/font"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BACKGROUND."
+                    android:textSize="16dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:id="@+id/testTv6"
+                    android:fontFamily="@font/font"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Both parties see the benefits of this project, have a desire to pursue the project and have determined that each brings unique expertise and experience necessary to accomplish the objectives outlined above."
+                    android:textSize="14dp"
+                    android:textColor="#000"/>
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/testTv7"
+                    android:fontFamily="@font/font"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="KHOOG HAS UNIQUE EXPERTISE AND EXPERIENCE IN THE FOLLOWING AREAS:"
+                    android:textSize="16dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:id="@+id/testTv8"
+                    android:fontFamily="@font/font"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. Working as a mediator between travelers and tour operators.\n2. Managing and handling payments from travelers to tour operators.\n3. Providing all type of assistance and guidance to the travelers and tour operators through it’s platform."
+                    android:textColor="#000"
+                    android:textSize="14dp"/>
+
+
+                <TextView
+                    android:id="@+id/testTv9"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/font"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="HAS UNIQUE EXPERTISE AND EXPERIENCE IN THE FOLLOWING AREAS:"
+                    android:textSize="16dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:id="@+id/testTv10"
+                    android:fontFamily="@font/font"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. Creating and managing tours for travelers.\nBringing all the required services together for travelers which may be required during the tour(s) or which may be requested by the travelers."
+                    android:textColor="#000"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/testTv11"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/font"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="KHOOG’S RESPONSIBILITIES"
+                    android:textSize="16dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/testTv12"
+                    android:fontFamily="@font/font"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="khooG shall undertake the following activities under this MOA"
+                    android:textSize="14sp"
+                    android:textColor="#000"/>
+                <TextView
+                    android:id="@+id/testTv13"
+                    android:fontFamily="@font/font"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. Provide online platform (website) to tour operators for listing their services.\n2. Provide with a login and password to tour operators or service providers for managing their account with khooG website and handling orders.\n3. Inform the tour operators about any change in SOPs that is important for tour operators for continuing smooth flow of provision of their services."
+                    android:textSize="14sp"
+                    android:textColor="#000"/>
+                <TextView
+                    android:id="@+id/testTv14"
+                    android:fontFamily="@font/font"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RESPONSIBILITIES."
+                    android:textSize="16dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/testTv15"
+                    android:fontFamily="@font/font"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="shall undertake the following activities under this MOA"
+                    android:textSize="14sp"
+                    android:textColor="#000"/>
+                <TextView
+                    android:id="@+id/testTv16"
+                    android:fontFamily="@font/font"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. Creating tours for travelers.\n2. Providing all the assistance to travelers which may be requested or required before or during the tour."
+                    android:textSize="14sp"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:id="@+id/testTv17"
+                    android:fontFamily="@font/font"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TERMS AND CONDITIONS."
+                    android:textSize="16dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/testTv18"
+                    android:fontFamily="@font/font"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="It is mutually understood and agreed by and between the parties that:"
+                    android:textSize="14sp"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:id="@+id/testTv19"
+                    android:fontFamily="@font/font"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. Each party takes legal responsibility for providing all the mutually decided services in time."
+                    android:textSize="14sp"
+                    android:textColor="#000"/>
+                <TextView
+                    android:id="@+id/testTv20"
+                    android:fontFamily="@font/font"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="will be responsible for providing all the services it has listed on the platform and will update any change within due time on khooG (partner account) as well as to it’s customers who have booked their tour with them."
+                    android:textSize="14sp"
+                    android:textColor="#000"/>
+                <TextView
+                    android:id="@+id/testTv21"
+                    android:fontFamily="@font/font"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3. khooG will deduct 5% as its service commission from the total cost of a tour."
+                    android:textSize="14sp"
+                    android:textColor="#000"/>
+                <TextView
+                    android:id="@+id/testTv22"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:fontFamily="@font/font"
+                    android:textSize="14sp"
+                    android:textColor="#000"/>
+                <TextView
+                    android:id="@+id/testTv23"
+                    android:fontFamily="@font/font"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:textColor="#000"/>
+                <TextView
+                    android:id="@+id/testTv24"
+                    android:fontFamily="@font/font"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:textColor="#000"/>
+                <TextView
+                    android:id="@+id/testTv25"
+                    android:fontFamily="@font/font"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" will be responsible to take all safety and security measures during the tour for safety of travelers."
+                    android:textSize="14sp"
+                    android:textColor="#000"/>
+                <TextView
+                    android:id="@+id/testTv26"
+                    android:fontFamily="@font/font"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:textColor="#000"/>
+                <TextView
+                    android:id="@+id/testTv27"
+                    android:fontFamily="@font/font"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" can customize refund policies according to its mutually agreed terms with khooG for a certain percentage of amount within specific period of time."
+                    android:textSize="14sp"
+                    android:textColor="#000"/>
+                <TextView
+                    android:id="@+id/testTv28"
+                    android:fontFamily="@font/font"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10. This MOA may be amended from time to time by mutual agreement of the parties in a written modification signed by both parties"
+                    android:textSize="14sp"
+                    android:textColor="#000"/>
+                <TextView
+                    android:id="@+id/testTv29"
+                    android:fontFamily="@font/font"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="11. This MOA may be terminated by mutual agreement of the parties and shall automatically terminate upon completion of all responsibilities as stated herein, unless otherwise amended."
+                    android:textSize="14sp"
+                    android:textColor="#000"/>
+                <TextView
+                    android:id="@+id/testTv30"
+                    android:fontFamily="@font/font"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="EFFECTIVE DATE AND SIGNATURE."
+                    android:textSize="16dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/testTv31"
+                    android:fontFamily="@font/font"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="This Memorandum of Agreement shall be effective upon the date of the last party to accept this MOA below. The parties indicate agreement with this Memorandum of Agreement by their digital acceptance."
+                    android:textSize="14sp"
+                    android:textColor="#000"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/testTv32"
+                            android:layout_marginTop="@dimen/margin_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="KHOOG"
+                            android:fontFamily="@font/font"
+                            android:textSize="16dp"
+                            android:textColor="#000"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:id="@+id/testTv33"
+                            android:layout_marginTop="@dimen/margin_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="12/11/18"
+                            android:fontFamily="@font/font"
+                            android:textSize="14sp"
+                            android:textColor="#000"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/testTv34"
+                            android:fontFamily="@font/font"
+                            android:layout_marginTop="@dimen/margin_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Dani Dani"
+                            android:textSize="16dp"
+                            android:textColor="#000"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:id="@+id/testTv35"
+                            android:fontFamily="@font/font"
+                            android:layout_marginTop="@dimen/margin_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="12/11/18"
+                            android:textSize="14sp"
+                            android:textColor="#000"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scroll">
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/radiobtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/font"
+                        android:text="I accept the agreement"
+                        android:backgroundTint="@color/khoogColor"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@id/radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:gravity="bottom">
+                <Button
+                    android:id="@+id/bt_createpdf"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Download PDF"
+                    android:textColor="#fff"
+                    android:onClick="createPDF"
+                    android:fontFamily="@font/font"
+                    android:background="@color/khoogColor"/>
+                <Button
+                    android:id="@+id/finshBtn"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Finish"
+                    android:fontFamily="@font/font"
+                    android:textColor="#fff"
+                    android:background="@color/khoogColor"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

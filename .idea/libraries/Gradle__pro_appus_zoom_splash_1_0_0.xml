@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: pro.appus:zoom-splash-1.0.0">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/zoom-splash-1.0.0.aar/a6667342617e1398742e8a7ed518fce2/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/zoom-splash-1.0.0.aar/a6667342617e1398742e8a7ed518fce2/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/pro.appus/zoom-splash/1.0.0/ad404c329d74580ad1253f846808af67749aae8e/zoom-splash-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

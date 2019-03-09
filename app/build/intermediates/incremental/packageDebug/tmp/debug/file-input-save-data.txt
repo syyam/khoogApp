@@ -1,0 +1,23 @@
+#Internal package file, do not edit.
+#Tue Mar 05 02:28:25 PKT 2019
+2.base=C\:\\Users\\syyam\\Downloads\\App Build\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+0.path=classes3.dex
+2.baseType=DIRECTORY
+3.base=C\:\\Users\\syyam\\Downloads\\App Build\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+2.set=DEX
+1.path=fonts/robotobold.ttf
+4.base=C\:\\Users\\syyam\\Downloads\\App Build\\app\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
+count=5
+2.path=classes2.dex
+4.set=ASSET
+3.path=classes.dex
+3.baseType=DIRECTORY
+1.set=ASSET
+4.path=fonts/roboto.ttf
+1.baseType=DIRECTORY
+0.base=C\:\\Users\\syyam\\Downloads\\App Build\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+0.baseType=DIRECTORY
+3.set=DEX
+1.base=C\:\\Users\\syyam\\Downloads\\App Build\\app\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
+4.baseType=DIRECTORY
+0.set=DEX

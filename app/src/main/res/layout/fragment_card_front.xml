@@ -1,0 +1,88 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.android.khoog.creditcard.CardFrontFragment">
+
+    <RelativeLayout
+        android:id="@+id/rl_card"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/ic_card_bg"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="16dp">
+
+
+
+            <ImageView
+                android:layout_width="@dimen/chip_width"
+                android:layout_height="@dimen/chip_height"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="@dimen/items_inbetween"
+                android:src="@drawable/ic_chip" />
+
+            <TextView
+                android:id="@+id/tv_card_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/font"
+                android:text="@string/card_number_sample"
+                android:textColor="@color/card_text_color"
+                android:textSize="@dimen/header_text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/items_inbetween_small"
+                    android:text="@string/card_validity_label"
+                    android:fontFamily="@font/font"
+                    android:textColor="@color/card_text_color"
+                    android:textSize="@dimen/xsmall_text" />
+
+                <TextView
+                    android:id="@+id/tv_validity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_validity_sample"
+                    android:textColor="@color/card_text_color"
+                    android:textSize="@dimen/xsmall_text" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_member_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/card_name_sample"
+                android:textAllCaps="true"
+                android:textColor="@color/card_text_color"
+                android:textSize="@dimen/medium_text" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivType"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/items_inbetween_small"
+            android:layout_marginBottom="@dimen/items_inbetween_small"
+            android:layout_width="@dimen/cardtype_width"
+            android:layout_height="@dimen/cardtype_height"
+             />
+
+    </RelativeLayout>
+
+</FrameLayout>

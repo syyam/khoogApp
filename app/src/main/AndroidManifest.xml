@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.khoog">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/khoogoriginal"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/generalnotitle">
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/generalnotitle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/generalnotitle" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".partner.step1" />
+        <activity android:name=".RegisterPartner" />
+        <activity android:name=".RegisterUser" />
+        <activity android:name=".Verification" />
+        <activity android:name=".GetStarted" />
+        <activity android:name=".partner.step2" />
+        <activity android:name=".Homepage" />
+        <activity android:name=".partner.step3" />
+        <activity android:name=".partner.step4" />
+        <activity android:name=".partner.step5" />
+        <activity android:name=".partner.pdf" />
+        <activity android:name=".partner.finishRegistration" />
+        <activity android:name=".createevent.step1" />
+        <activity android:name=".createevent.step2" />
+        <activity android:name=".createevent.step3" />
+        <activity android:name=".createevent.step4" />
+        <activity android:name=".createevent.step5" />
+        <activity android:name=".addactivity" />
+        <activity android:name=".addtransport" />
+        <activity android:name=".createevent.GalleryActivity" />
+        <activity android:name=".createevent.Bookingtype" />
+        <activity android:name=".SuccessfullyCreate" />
+        <activity android:name=".ShowEvent" />
+        <activity android:name=".Dashboard" />
+        <activity android:name=".companydashboard.Rules" />
+        <activity android:name=".CompanyHomePage" />
+        <activity android:name=".creditcard.CheckOutActivity" />
+        <activity
+            android:name=".userDashboard"
+            android:label="@string/title_activity_user_dashboard"
+            android:theme="@style/generalnotitle" />
+        <activity android:name=".CustomerSetting" />
+        <activity android:name=".searchActivity"></activity>
+    </application>
+
+</manifest>

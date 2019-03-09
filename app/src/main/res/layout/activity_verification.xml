@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".Verification">
+
+
+    <ImageView
+        android:id="@+id/backarrow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+
+        android:src="@drawable/ic_arrow_back_black_24dp" />
+    <TextView
+        android:id="@+id/mainTitle"
+        android:layout_below="@id/backarrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify Your Code"
+        android:layout_marginTop="70dp"
+        android:textColor="#000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/mainTitle"
+        android:id="@+id/mailImg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/lock1"
+        android:tint="@color/khoogColor"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/subtext"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:layout_below="@id/mailImg"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please check your inbox and enter code below"
+        android:textColor="#000"
+        android:textSize="16dp" />
+
+
+    <com.chaos.view.PinView
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/subtext"
+        android:id="@+id/view"
+        style="@style/PinWidget.PinView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="true"
+        android:paddingLeft="20dp"
+        android:inputType="number"
+        android:textColor="#222"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cursorColor="@color/khoogColor"
+        app:cursorWidth="2dp"
+        app:itemCount="6"
+        app:itemHeight="38dp"
+        app:itemSpacing="10dp"
+        app:itemWidth="38dp"
+        app:lineColor="@color/khoogColor"
+        app:lineWidth="2dp"
+        app:viewType="line" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/view"
+        android:gravity="center"
+        android:layout_height="match_parent">
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/aviVerify"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:layout_height="wrap_content"
+            style="@style/AVLoadingIndicatorView"
+            android:visibility="gone"
+            app:indicatorName="LineSpinFadeLoaderIndicator"
+            app:indicatorColor="@color/khoogColor"
+            />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

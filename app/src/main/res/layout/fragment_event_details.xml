@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".ShowEvent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#eee"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Pickup"
+                    android:textColor="@color/khoogColor"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/font"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Lahore"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/regular"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Going"
+                    android:textColor="@color/khoogColor"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/font"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="0 Men 0 Women"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/regular"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Date"
+                    android:textColor="@color/khoogColor"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/font"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Date"
+                    android:id="@+id/eventdate"
+                    android:singleLine="true"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/regular"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:tint="@color/khoogColor"
+                    android:src="@drawable/ic_place_black_24dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Khyber Pakhtunkhwa"
+                    android:textSize="18dp"
+                    android:textColor="@color/khoogColor"
+                    android:fontFamily="@font/font"
+                    android:id="@+id/location"
+                    android:paddingTop="5dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:text="Lake Saiful Malook is the most visited tourist spot in Pakistan, located in Naran vally some 230 Km from Islamabad &amp; 20 km from Kaghan. Lake Saiful Malook Naran vally enjoy cult like status admired by tourist all across Pakistan. Naran valley is only accessible during summers. Due to many exciting locations like Lake Saiful Malook, Lalazar, Batakundi."
+                android:textColor="#222"
+                android:textSize="14sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Top attractions you'll see"
+                android:textSize="18dp"
+                android:fontFamily="@font/font"
+                android:textColor="#222"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/attractionlayout"
+                android:layout_marginTop="10dp">
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What we'll do"
+                android:textSize="18dp"
+                android:fontFamily="@font/font"
+                android:textColor="#222"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/whatttodo"
+                android:layout_marginTop="10dp">
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What we'll provide"
+                android:textColor="#222"
+                android:layout_marginBottom="10dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/font"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/acclayout"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_local_hotel_black_24dp"
+                    android:tint="@color/khoogColor"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="Accomodation"
+                        android:fontFamily="@font/font"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="Accomodation Details"
+                        android:id="@+id/accdetails"
+                        android:fontFamily="@font/regular"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/meallayout"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_restaurant_black_24dp"
+                    android:tint="@color/khoogColor"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="Meal"
+                        android:fontFamily="@font/font"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="Meal Details"
+                        android:id="@+id/mealdetails"
+                        android:fontFamily="@font/regular"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Special Notes"
+                android:fontFamily="@font/font"
+                android:textColor="#222"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:id="@+id/specialnotes"
+                android:fontFamily="@font/roboto"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cancellation"
+                android:textSize="18sp"
+                android:fontFamily="@font/font"
+                android:textColor="#222"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Strict "
+                    android:fontFamily="@font/font"
+                    android:id="@+id/getcancelleration"
+                    android:textColor="#222"
+                    android:textSize="12sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/refunddesp"
+                    android:fontFamily="@font/font"
+                    android:layout_height="wrap_content"
+                    android:text="No refund if cancellation requested within 4 days prior to the event. Cancel before 4 days and get a full 100% refund."
+                    android:textSize="12sp"
+                    android:textColor="#222"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rules &amp; Regulations"
+                android:textSize="18sp"
+                android:fontFamily="@font/font"
+                android:textColor="#222"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:fontFamily="@font/roboto"
+                android:id="@+id/rulestext"
+                android:layout_height="wrap_content"
+                android:text="The event host encourages you to read a list of rules and regulations that you need to keep in mind before booking for this event. See rules and regulations"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/btnlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/btnEvent"
+                android:background="#F9AD19"
+                android:fontFamily="@font/font"
+                android:textSize="16sp"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="#FFF" tools:targetApi="o"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/booklayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/bookbtn"
+                android:text="Book Event"
+                android:background="#F9AD19"
+                android:fontFamily="@font/font"
+                android:textSize="16sp"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="#FFF" tools:targetApi="o"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/payoutlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/btnPayout"
+                android:background="#F9AD19"
+                android:fontFamily="@font/font"
+                android:textSize="16sp"
+                android:text="Payout"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="#FFF"
+                tools:targetApi="o"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

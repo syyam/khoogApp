@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "622773404627",
+    "firebase_url": "https://khoog-b8bdd.firebaseio.com",
+    "project_id": "khoog-b8bdd",
+    "storage_bucket": "khoog-b8bdd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622773404627:android:27c821a7dfa0202f",
+        "android_client_info": {
+          "package_name": "com.android.khoog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "622773404627-la3qpipr97escr2nvd67s4r4s9o25a40.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.khoog",
+            "certificate_hash": "286ac2d914056566958389923fb60218a74c561f"
+          }
+        },
+        {
+          "client_id": "622773404627-okn14nfkpvercmoni5ag91gre0h1aqc0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVMUnz5RKzVxqF502O_mNHMyuYW5qAGRA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "622773404627-okn14nfkpvercmoni5ag91gre0h1aqc0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".createevent.step2">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp">
+        <ImageView
+            android:id="@+id/backarrow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+
+
+        <TextView
+            android:id="@+id/creatEvn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/font"
+            android:layout_gravity="center"
+            android:text="Services"
+            android:textColor="@color/khoogColor"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eee"
+        android:layout_below="@id/layout1"
+        android:id="@+id/view"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:paddingBottom="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:id="@+id/layout">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Included"
+                android:fontFamily="@font/font"
+                android:textColor="#222"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/accomodationcheckbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Accomodation"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:fontFamily="@font/font"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/accomodationText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:fontFamily="@font/font"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="Separate room for couple, shared bedroom"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="15sp"
+                android:singleLine="true"/>
+            <CheckBox
+                android:id="@+id/meal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Meal"
+                android:textSize="16dp"
+                android:fontFamily="@font/font"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/mealText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/font"
+                android:background="@drawable/rounded_edittext"
+                android:hint="Standard meals, only lunch and dinner, refreshment"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="15sp"
+                android:singleLine="true"/>
+            <CheckBox
+                android:id="@+id/team"
+                android:fontFamily="@font/font"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Team"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/teamText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:fontFamily="@font/font"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="Professional guide, driver, event manager"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="15sp"
+                android:singleLine="true"/>
+
+            <CheckBox
+                android:id="@+id/health"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Health"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/font"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/healthText"
+                android:fontFamily="@font/font"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="Basic first aid"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="15sp"
+                android:singleLine="true"/>
+            <CheckBox
+                android:id="@+id/transportation"
+                android:fontFamily="@font/font"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Transportation"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/transportationText"
+                android:fontFamily="@font/font"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="Tolls, fuel, luxury, air condition"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="15sp"
+                android:singleLine="true"/>
+
+            <CheckBox
+                android:id="@+id/others"
+                android:fontFamily="@font/font"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Others"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/othersText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:fontFamily="@font/font"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="Bonefire arrangements etc."
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="15sp"
+                android:singleLine="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Excluded"
+                android:fontFamily="@font/font"
+                android:textColor="#222"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp" />
+
+            <CheckBox
+                android:id="@+id/accomodationExcluded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Accomodation"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:fontFamily="@font/font"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/accomodationTextExcluded"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/font"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="Separate room for couple, shared bedroom"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="15sp"
+                android:singleLine="true"/>
+            <CheckBox
+                android:id="@+id/mealExcluded"
+                android:fontFamily="@font/font"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Meal"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/mealTextExcluded"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:fontFamily="@font/font"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="Standard meals, only lunch and dinner, refreshment"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="15sp"
+                android:singleLine="true"/>
+            <CheckBox
+                android:id="@+id/teamExcluded"
+                android:fontFamily="@font/font"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Team"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/teamTextExcluded"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:fontFamily="@font/font"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="Professional guide, driver, event manager"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="15sp"
+                android:singleLine="true"/>
+
+            <CheckBox
+                android:id="@+id/healthExcluded"
+                android:fontFamily="@font/font"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Health"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/healthTextExcluded"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:fontFamily="@font/font"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="Basic first aid"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="15sp"
+                android:singleLine="true"/>
+            <CheckBox
+                android:id="@+id/transportationExcluded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Transportation"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/font"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/transportationTextExcluded"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:fontFamily="@font/font"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="Tolls, fuel, luxury, air condition"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="15sp"
+                android:singleLine="true"/>
+
+            <CheckBox
+                android:id="@+id/othersExcluded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Others"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/font"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/othersTextExcluded"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:fontFamily="@font/font"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="Bonefire arrangements etc."
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="15sp"
+                android:singleLine="true"/>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Carry On"
+                    android:fontFamily="@font/font"
+                    android:textColor="#222"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text=" (Optional)"
+                    android:fontFamily="@font/font"
+                    android:textSize="15dp"
+                    android:textColor="#888"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="-10dp"
+                android:id="@+id/carry_layout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_weight="1"
+                    android:id="@+id/trakkingStick"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/font"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="Trakking Stick"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="15sp"
+                    android:singleLine="true"/>
+                <Button
+                    android:id="@+id/carry_hide"
+                    android:layout_width="50dp"
+                    android:fontFamily="@font/font"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:textSize="20dp"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="18dp"
+                    android:background="@drawable/hide_background"
+                    android:backgroundTint="@color/khoogColor"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/plusButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Special Notes"
+                    android:fontFamily="@font/font"
+                    android:textColor="#222"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" (Optional)"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/font"
+                    android:textColor="#888"/>
+            </LinearLayout>
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:hint="*Single room accomodations are done on request.Special pickup would be done on request.*"
+                android:gravity="top"
+                android:fontFamily="@font/font"
+                android:textSize="15sp"
+                android:background="@drawable/rounded_edittext"
+                android:inputType="text|textMultiLine"
+                android:textCursorDrawable="@drawable/cursor" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font"
+                    android:padding="5dp"
+                    android:background="@drawable/note_background"
+                    android:text="Note: You can also add prices for excluded items and carry ons seperately in our pricing section."
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_below="@id/mainlayout"
+        android:id="@+id/btnlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/EventBtn1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/font"
+            android:background="#F9AD19"
+            android:textSize="16sp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Save &amp; Next"
+            android:textColor="#FFF" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".createevent.step4">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="30dp">
+        <ImageView
+            android:id="@+id/backarrowstep4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+
+
+        <TextView
+            android:id="@+id/creatEvn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/font"
+            android:layout_gravity="center"
+            android:paddingRight="40dp"
+            android:paddingLeft="40dp"
+            android:text="Itinerary"
+            android:textColor="@color/khoogColor"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_below="@+id/layout1"
+        android:id="@+id/layout2">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttondayslayout"
+                android:orientation="horizontal">
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eee"
+        android:layout_below="@id/layout2"
+        android:id="@+id/view"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="5dp"
+        android:weightSum="2"
+        android:padding="10dp"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/addbuttonlayout"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Activity"
+            android:id="@+id/addActivivty"
+            android:fontFamily="@font/font"
+            android:textSize="12sp"
+            android:maxLines="1"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/select_border"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Transportation"
+            android:layout_marginLeft="2dp"
+            android:maxLines="1"
+            android:fontFamily="@font/font"
+            android:textSize="12sp"
+            android:id="@+id/addTransportation"
+            android:background="@drawable/select_border"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/scrollLayout"
+        android:padding="10dp"
+        android:layout_height="320dp"
+        android:layout_below="@id/addbuttonlayout">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/mainlayoutitt"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_below="@id/scrollLayout"
+        android:id="@+id/btnlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/pBtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/font"
+            android:background="#F9AD19"
+            android:textSize="16sp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Save &amp; Next"
+            android:textColor="#FFF" />
+
+    </LinearLayout>
+
+</RelativeLayout>
